@@ -42,18 +42,11 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
     unique: true,
-    validate: {
-      validator: function (value) {
-        return value.endsWith("@gmail.com");
-      },
-      message: "Email must be a Gmail address (e.g., user@gmail.com)"
-    }
   },
   // Password must be at least 6 characters
   password: {
     type: String,
     required: true,
-    minlength: [6, "Password must be at least 6 characters long"]
   }
 });
 

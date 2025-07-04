@@ -33,13 +33,17 @@ export const singleProduct = async (req, res) => {
   }
 };
 
+// Add a product
 export const addProduct = async (req, res) => {
+  // Getting name, price description, stock
   const {name, price, description, stock} = req.body;
   try{
+    // Checking
     if(!name || !price || !description || !stock){
     return res.status(400).json({message: "Please Fill All Fields"})
   }
 
+  // newProduct
   let newProduct = new Product({
     name: name,
     price: price,
@@ -47,11 +51,14 @@ export const addProduct = async (req, res) => {
     stock: stock,
   })
 
+  // saving
   await newProduct.save();
 
+  // response
   res.status(201).json(newProduct)
   
   }catch (err){
+    // in case of error
     res.status(500).json({ message: 'Server error' });
   }
   

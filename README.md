@@ -148,7 +148,7 @@ http://localhost:5000/cart/68676a8379d932b2074b06be
 if my screenshots are not available in this pdf this is link of my github
 <!-- https://github.com/RizwanAhmed001/ShoppyGlobe-E-commerce-Backend-API/blob/main/Project%20Screenshot.pdf -->
 
-<!-- Github link for complete project -->
+Github link for complete project
 <!-- https://github.com/RizwanAhmed001/ShoppyGlobe-E-commerce-Backend-API -->
 
 
